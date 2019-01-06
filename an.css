@@ -1,0 +1,38 @@
+body {font-family: Tahoma; transition: background .5s} * {box-sizing: border-box}
+.tab {overflow: hidden; border: 1px solid #ccc; background: #f1f1f1}
+.tab button {background: inherit; float: left; border: none; outline: none; cursor: pointer; padding: 14px 16px; transition: 0.3s;
+    font-size: 17px}
+.tab button:hover {background: #ddd}
+.tab button.active {background: #ccc}
+.tabcontent {display: none; padding: 6px 12px; -webkit-animation: fadeEffect 1s; animation: fadeEffect 1s}
+@-webkit-keyframes fadeEffect {from {opacity: 0;} to {opacity: 1;}}
+@keyframes fadeEffect {from {opacity: 0;} to {opacity: 1;}}
+#sc {max-width: 1000px; position: relative; margin: auto}
+.pr, .next {cursor: pointer; position: absolute; top: 50%; color: white; font-weight: bold; transition: .6s}
+.next {right: 0} .pr:hover, .next:hover {background: black}
+.text {color: black; font-size: 15px; text-align: center}
+.nt {color: white; font-size: 12px; padding: 8px 12px; position: absolute}
+.d {cursor: pointer; height: 15px; width: 15px; background: lightgray; border-radius: 50%; display: inline-block;
+	transition: .6s}
+.z, .d:hover {background: gray} .f {-webkit-animation: y 2s; animation: y 2s}
+@-webkit-keyframes y {from {opacity: .1} to {opacity: 1}}
+@keyframes y {from {opacity: .1} to {opacity: 1}}
+@media only screen and (max-width: 300px) {.pr, .next,.text {font-size: 11px}}
+.accordion {background: #eee; color: #444; cursor: pointer; padding: 18px; width: 100%; border: none; text-align: left; outline: none;
+    font-size: 15px; transition: 0.4s}
+.active, .accordion:hover {background: #ccc}
+.panel {padding: 0 18px; display: none; background: white; overflow: hidden}
+.sidenav {height: 100%; width: 0; position: fixed; z-index: 1; top: 0; left: 0; background: #111; overflow-x: hidden; transition: 0.5s;
+    padding-top: 60px}
+.sidenav a {padding: 8px 8px 8px 32px; text-decoration: none; font-size: 25px; color: #818181; display: block; transition: 0.3s}
+.sidenav a:hover {color: #f1f1f1}
+.sidenav .closebtn {position: absolute; top: 0; right: 25px; font-size: 36px; margin-left: 50px}
+#main {transition: margin-left .5s; padding: 16px}
+@media screen and (max-height: 450px) {.sidenav {padding-top: 15px;} .sidenav a {font-size: 18px;}}
+#flya {position: absolute; left: 20px; -webkit-animation: x 15s infinite; animation: x 15s infinite}
+@-webkit-keyframes x {50% {left: 1220px}} @keyframes x {50% {left: 1220px}}
+#flyb {margin-top: 175px; position: absolute; left: 1220px; -webkit-animation: z 15s infinite; animation: z 15s infinite}
+@-webkit-keyframes z {50% {left: 20px}} @keyframes z {50% {left: 20px}}
+#cn, #vba, #main, .fb-comments {float: left} .fb-comments {margin-left: 350px}
+#decor {font-size: 50px}
+#vba {margin-left: 10vw}

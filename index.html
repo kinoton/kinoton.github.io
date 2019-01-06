@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Kinoton</title>
+	<link rel="stylesheet" href="an.css"><link rel="icon" href="logo.jpg">
+</head>
+<body>
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = 'https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v3.2&appId=167720593256886&autoLogAppEvents=1';
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+	<div class="tab">
+		<button class="tablinks" onclick="o(event, home)" id=defaultOpen><a href="https://n85.github.io/kinoton" style='text-decoration: none'>Home</a></button>
+		<button class="tablinks" onclick="o(event, aboutMe)">About us</button>
+		<button class="tablinks" onclick="o(event, decor)">Relax</button>
+		<button class="tablinks" onclick="o(event, contactMe)">Contact us</button>
+	</div>
+	<div id="home" class="tabcontent">
+		<div id=sc>
+			<div id=scp></div>
+			<a class=pr onclick="p(-1)">Prev</a><a class="next" onclick="p(1)">Next</a>
+		</div><br>
+		<div style="text-align:center" id=csd>
+		</div>
+	</div>
+	<div id="aboutMe" class="tabcontent">
+		<button class="accordion">Kinoton Digital Solutions GmbH</button>
+		<div class="panel"><p>Kinoton Digital Solutions sells and distributes professional audiovisual technology worldwide. It also provides a full range of system integration and other services for cinemas, post-production studios, and customer-specific projects. Headquartered in Germering near Munich, Germany, Kinoton Digital Solutions is one of Europe’s largest vendors of complete cinema solutions.</p></div>
+		<img src="logo.jpg" id=flya><img src="logo.jpg" id=flyb>
+	</div>
+	<div id=decor class=tabcontent>
+		<div id=vba>
+			<table border=20><td id=namea bgcolor=lavender>z</td></table>
+			<p id=nameb>z</p><p id=namec>z</p>
+		</div>
+		<div id=anbo>
+			<img src="k3.jpg"><img src="k4.jpg"><img src="k5.jpg">
+		</div>
+	</div>
+	<div id="contactMe" class="tabcontent">
+		<div id="main">
+			<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Some Links</span><br>
+			Counter PageViews: <img src="http://hitwebcounter.com/counter/counter.php?page=7014449&style=0001&nbdigits=9&type=page&initCount=0" Alt="web page hit counters codes Free"><br/>
+			Counter UniqueVisitors: <img src="http://hitwebcounter.com/counter/counter.php?page=7014451&style=0001&nbdigits=9&type=ip&initCount=0" Alt="web page hit counters codes Free">
+		</div>
+		<div class="fb-comments" data-href="https://www.facebook.com/KinotonFan" data-numposts="15"></div>
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<a target="_blank" href="https://www.facebook.com/nam.vh85">Admin</a>
+			<a target="_blank" href="https://www.facebook.com/KinotonFan">My FanPage FB</a>
+		</div>
+	</div>
+	<script src="an.js"></script>
+</body>
+</html>
