@@ -35,4 +35,4 @@ body {font-family: Tahoma; transition: background .5s} * {box-sizing: border-box
 @-webkit-keyframes z {50% {left: 20px}} @keyframes z {50% {left: 20px}}
 #cn, #vba, #main, .fb-comments {float: left} .fb-comments {margin-left: 350px}
 #decor {font-size: 50px}
-#vba {margin-left: 10vw}
+#vba, #anbo {margin-left: 10vw}
